@@ -1,0 +1,117 @@
+ 
+/* Table Header */
+.jvn-table-grid {
+  position: relative;
+  margin-bottom: 15px;
+}
+.jvn-table-grid table {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.jvn-table-grid table > thead > tr > th {
+  cursor: pointer;
+}
+.jvn-table-grid table > thead > tr > th.sorting_desc:after,
+.jvn-table-grid table > thead > tr > th.sort-desc span:after,
+.jvn-table-grid table > thead > tr > th.sorting_asc:after,
+.jvn-table-grid table > thead > tr > th.sort-asc span:after {
+  font-family: 'FontAwesome';
+  color: #000000;
+  margin-left: 10px;
+}
+.jvn-table-grid table > thead > tr > th.sorting_desc:after,
+.jvn-table-grid table > thead > tr > th.sort-desc span:after {
+  content: "\f0d7";
+}
+.jvn-table-grid table > thead > tr > th.sorting_asc:after,
+.jvn-table-grid table > thead > tr > th.sort-asc span:after {
+  content: "\f0d8";
+}
+.jvn-table-grid table > thead > tr:not(.label-row) > th:last-child {
+  text-align: right;
+}
+.jvn-table-grid table > thead > tr.label-row > th {
+  text-align: center;
+}
+.jvn-table-grid table > tbody > tr {
+  border-bottom: 1px solid #bbbbbb;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -webkit-transition: opacity 3s ease-in-out;
+}
+.jvn-table-grid table > tbody > tr:hover {
+  background: #89e3f9;
+}
+.jvn-table-grid table > tbody > tr.selected {
+  background: #1a8099;
+  color: #ffffff;
+}
+.jvn-table-grid table > tbody > tr > td {
+  border-top: none;
+  padding: 10px;
+}
+.jvn-table-grid table > tbody > tr > td:last-child {
+  text-align: right;
+}
+.jvn-table-grid .jvn-table-nav .rows-per-page-select {
+  margin-right: 30px;
+}
+.jvn-table-grid .jvn-table-nav .rows-per-page-select label {
+  margin: 7px;
+}
+.jvn-table-grid .jvn-table-nav .rows-per-page-select .jvn-dropdown {
+  width: auto;
+  min-width: 80px;
+}
+.jvn-table-grid .jvn-table-nav .jvn-table-pagination ul {
+  padding: 0;
+  margin: 0;
+}
+.jvn-table-grid .jvn-table-nav .jvn-table-pagination ul li {
+  list-style: none;
+  display: inline;
+  margin: 0;
+}
+.jvn-table-grid .jvn-table-nav .jvn-table-pagination ul li .btn {
+  min-width: auto;
+  height: auto;
+  width: auto;
+  color: #6a6a6a;
+  font-size: 31px;
+  padding: 0;
+  background: none;
+}
+.jvn-table-grid .jvn-table-nav .jvn-table-pagination ul li .btn:hover,
+.jvn-table-grid .jvn-table-nav .jvn-table-pagination ul li .btn:active {
+  text-decoration: none;
+}
+.jvn-table-grid .jvn-table-nav .jvn-table-pagination ul li.disabled .btn {
+  color: #bbbbbb;
+}
+.jvn-table-grid .jvn-table-nav .jvn-table-pagination .prev-pages {
+  margin-right: 20px;
+}
+.jvn-table-grid .jvn-table-nav .jvn-table-pagination .next-pages {
+  margin-left: 20px;
+}
+.jvn-table-grid .jvn-table-nav .jvn-table-pagination .jvn-pagination-input .current-start-page {
+  float: left;
+  max-width: 60px;
+  margin-right: 5px;
+  text-align: center;
+  -moz-appearance: textfield;
+  width: 100%;
+}
+.jvn-table-grid .jvn-table-nav .jvn-table-pagination .jvn-pagination-input .current-start-page::-webkit-outer-spin-button,
+.jvn-table-grid .jvn-table-nav .jvn-table-pagination .jvn-pagination-input .current-start-page::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.jvn-table-grid .jvn-table-nav .jvn-table-pagination .jvn-page-indicator {
+  margin: 8px 0 0 5px;
+}

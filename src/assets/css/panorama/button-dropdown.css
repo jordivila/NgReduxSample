@@ -1,0 +1,12 @@
+.jvn-button-dropdown {
+  display: inline-block;
+}
+.jvn-button-dropdown.open > .btn-primary.btn {
+  background-color: #0e5061;
+  border: 2px solid #0e5061;
+  color: #ffffff;
+}
+.jvn-button-dropdown.open > .btn-secondary.btn {
+  color: #0e5061;
+  border-color: #0e5061;
+}

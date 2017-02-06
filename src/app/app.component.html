@@ -1,3 +1,23 @@
-<h1>
-  {{title}}
-</h1>
+<div class="jvn-dashboard">
+
+    <jvn-toolbar></jvn-toolbar>
+    <jvn-loading></jvn-loading>
+
+    <div class="container jvn-dashboard-container animate" 
+        [ngClass]="{blurOverlay: isLoading}">
+        <jvn-navbar></jvn-navbar>
+        <div class="page-container animate" >
+            <div class="page-content condensed">
+                <div class="content">
+                    <div class="jvn-dashboard-content">
+                        <jvn-route-title></jvn-route-title>
+                        <main>
+                            <router-outlet></router-outlet>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <jvn-footer></jvn-footer>
+        </div>
+    </div>
+</div>

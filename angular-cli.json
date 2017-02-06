@@ -17,8 +17,28 @@
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
       "prefix": "app",
+      "addons": [
+         "../node_modules/font-awesome/fonts/*.+(otf|eot|svg|ttf|woff|woff2)"
+      ],
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/ng2-toastr/ng2-toastr.css",
+        
+        "assets/css/panorama/base.css",
+        "assets/css/panorama/tiles.css",
+        "assets/css/panorama/popovers.css",
+        "assets/css/panorama/tabs.css",
+        "assets/css/panorama/avatar-dropdown.css",
+        "assets/css/panorama/framework-with-left-navigation.css",
+        "assets/css/panorama/button-dropdown.css",
+        "assets/css/panorama/dropdowns.css",
+        "assets/css/panorama/cards.css",
+        "assets/css/panorama/table-grid.css",
+        "assets/css/panorama/buttons.css",
+        "assets/css/panorama/modals.css",
+        "assets/css/panorama/progressBar.css",
+        "assets/css/main.css"
       ],
       "scripts": [],
       "environments": {

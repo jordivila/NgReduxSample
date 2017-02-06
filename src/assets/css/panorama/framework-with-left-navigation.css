@@ -1,0 +1,395 @@
+ 
+.jvn-dashboard {
+  /* Side Menu */
+}
+.jvn-dashboard.no-bg {
+  background: none;
+}
+.jvn-dashboard .jvn-logo-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.jvn-dashboard .jvn-logo-wrapper > i {
+  font-size: 40px;
+  color: #ffffff;
+}
+.jvn-dashboard .jvn-logo-wrapper > i.icon-jvn {
+  color: #940a0a;
+}
+.jvn-dashboard .jvn-dashboard-sponsor {
+  text-align: right;
+  font-size: 64px;
+  color: #ffffff;
+}
+.jvn-dashboard .jvn-dashboard-container {
+  overflow: hidden;
+  background: rgba(245, 245, 245, 0.95);
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  min-width: 300px;
+  min-height: 100%;
+}
+.jvn-dashboard .jvn-dashboard-container .page-container {
+  width: 100%;
+  margin-left: 85px;
+  padding-right: 85px;
+}
+.jvn-dashboard .jvn-dashboard-container .page-container .top-nav {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 15px;
+}
+.jvn-dashboard .jvn-dashboard-container .page-container .top-nav .btn.btn-nav-toggle {
+  font-size: 24px;
+  margin-right: 15px;
+  margin-top: 7px;
+}
+.jvn-dashboard .jvn-dashboard-container .page-container .top-nav .jvn-dashboard-title {
+  float: left;
+  padding-left: 5px;
+  margin: 6px 0 0;
+}
+.jvn-dashboard .jvn-dashboard-container .page-container .top-nav .top-search {
+  margin-right: 20px;
+}
+.jvn-dashboard .jvn-dashboard-container .page-container .top-nav .top-search .form-group {
+  margin-bottom: 0;
+}
+.jvn-dashboard .jvn-dashboard-container .page-container .top-nav .top-search .form-group .jvn-search .btn {
+  top: 5px;
+}
+.jvn-dashboard .jvn-dashboard-container .page-container .top-nav .top-search .form-group .jvn-search .form-control {
+  height: 46px;
+  font-size: 18px;
+  background-color: #ebebeb;
+  min-width: 350px;
+}
+.jvn-dashboard .jvn-dashboard-container .page-container .page-content {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.jvn-dashboard .jvn-dashboard-container .page-container.full-width {
+  margin-left: 0;
+  padding-right: 0;
+}
+.jvn-dashboard .jvn-dashboard-container .jvn-dashboard-content {
+  margin-top: 15px;
+}
+.jvn-dashboard .page-sidebar {
+  background-color: transparent;
+  position: absolute;
+  width: 85px;
+  height: 100%;
+  overflow: hidden;
+}
+.jvn-dashboard .page-sidebar,
+.jvn-dashboard .page-sidebar ul {
+  width: 275px;
+}
+.jvn-dashboard .page-sidebar > ul.menu {
+  background-color: #0e5061;
+  /* overridden in brandable.less */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.jvn-dashboard .page-sidebar > ul.menu > li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 1;
+  /* this overlays white bg but with a transparency to produce a lighter hover bg color */
+}
+.jvn-dashboard .page-sidebar > ul.menu > li.item-disabled {
+  cursor: default;
+}
+.jvn-dashboard .page-sidebar > ul.menu > li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.jvn-dashboard .page-sidebar > ul.menu > li > a {
+  display: block;
+  position: relative;
+  color: #ffffff;
+  text-align: left;
+  text-decoration: none !important;
+  background-color: transparent;
+  margin: 0;
+  border: 0;
+  padding: 10px 0;
+  height: 75px;
+  font-family: inherit;
+  font-weight: 300;
+  /* This code puts the selected arrow over nav item */
+}
+.jvn-dashboard .page-sidebar > ul.menu > li > a.active:after,
+.jvn-dashboard .page-sidebar > ul.menu > li > a.nav-arrow-first:after {
+  font-family: FontAwesome;
+  content: "\f0d9";
+  /* fa-caret-left */
+  font-size: 36px;
+  position: absolute;
+  top: 10px;
+  right: -2px;
+  color: #ebebeb;
+}
+.jvn-dashboard .page-sidebar > ul.menu > li > a.nav-arrow:hover::after,
+.jvn-dashboard .page-sidebar > ul.menu > li > a.nav-arrow.active::after {
+  color: #ebebeb;
+}
+.jvn-dashboard .page-sidebar > ul.menu > li > a.nav-arrow-first:hover::after,
+.jvn-dashboard .page-sidebar > ul.menu > li > a.nav-arrow-first.active::after {
+  color: #ffffff;
+}
+@media (max-width: 992px) {
+  .jvn-dashboard .page-sidebar > ul.menu > li > a.nav-arrow-first:hover::after,
+  .jvn-dashboard .page-sidebar > ul.menu > li > a.nav-arrow-first.active::after {
+    color: #ebebeb;
+  }
+}
+.jvn-dashboard .page-sidebar > ul.menu > li.active > a {
+  color: #ffffff;
+}
+.jvn-dashboard .page-sidebar .nav-profile {
+  overflow: auto;
+  padding: 15px;
+}
+.jvn-dashboard .page-sidebar .nav-profile .position {
+  font-weight: 200;
+  font-size: 14px;
+}
+.jvn-dashboard .page-sidebar .nav-profile button {
+  margin-top: 5px;
+}
+.jvn-dashboard .page-sidebar > ul > li {
+  background-position: 15px center;
+  background-size: 35px auto;
+}
+.jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-dashboard:before,
+.jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-onboarding:before {
+  content: "\e609";
+}
+.jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-demo:before {
+  content: "\e611";
+  font-size: 28px;
+}
+.jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-pay:before {
+  content: "\e601";
+}
+.jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-timeoff:before {
+  content: "\e603";
+}
+.jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-connections:before {
+  content: "\e60a";
+}
+.jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-benefits:before {
+  content: "\e605";
+}
+.jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-policies:before {
+  content: "\e606";
+}
+.jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-company:before {
+  content: "\e612";
+}
+.jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-timecard:before {
+  content: "\e602";
+}
+.jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-calendar:before {
+  content: "\e600";
+}
+.jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-admin:before {
+  content: "\e610";
+}
+.jvn-dashboard .page-sidebar > ul > li .settings:before,
+.jvn-dashboard .page-sidebar > ul > li .tour:before,
+.jvn-dashboard .page-sidebar > ul > li .logout:before {
+  font-family: FontAwesome;
+  color: #ffffff;
+  font-size: 3em;
+  float: left;
+  margin-top: 8px;
+  padding-left: 15px;
+}
+.jvn-dashboard .page-sidebar > ul > li .settings:before {
+  content: "\f013";
+}
+.jvn-dashboard .page-sidebar > ul > li .tour:before {
+  content: "\f018";
+}
+.jvn-dashboard .page-sidebar > ul > li .logout:before {
+  content: "\f011";
+}
+.jvn-dashboard .page-sidebar > ul > li .feedback:before {
+  content: "\f118";
+}
+.jvn-dashboard .page-sidebar > ul > li .talent:before {
+  content: "\f091";
+}
+.jvn-dashboard .page-sidebar > ul > li a {
+  font-size: 18px;
+}
+.jvn-dashboard .menu-close .page-sidebar {
+  left: -275px;
+}
+.jvn-dashboard .menu-close .page-container {
+  margin-left: 0;
+  padding-right: 0;
+}
+.jvn-dashboard .menu-open .page-sidebar {
+  left: 0;
+}
+.jvn-dashboard .menu-open .page-container {
+  margin-left: 275px;
+  padding-right: 0;
+}
+@media (max-width: 992px) {
+  .jvn-dashboard .jvn-dashboard-container .page-container .top-nav .top-search .form-group .jvn-search .form-control {
+    min-width: 200px;
+  }
+  .jvn-dashboard .page-sidebar {
+    position: absolute;
+    margin: 0;
+    overflow: visible !important;
+  }
+  .jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-dashboard:before,
+  .jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-pay:before,
+  .jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-timeoff:before,
+  .jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-connections:before,
+  .jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-benefits:before,
+  .jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-onboarding:before,
+  .jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-demo:before,
+  .jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-policies:before,
+  .jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-company:before,
+  .jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-calendar:before,
+  .jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-timecard:before,
+  .jvn-dashboard .page-sidebar > ul > li .jvn-fa-icon-admin:before {
+    font-family: jvn-font-awesome;
+    color: #ffffff;
+    font-size: 30px;
+    float: left;
+    padding-left: 15px;
+    padding-top: 20px;
+  }
+  .jvn-dashboard .page-sidebar > ul > li .talent:before,
+  .jvn-dashboard .page-sidebar > ul > li .feedback:before {
+    font-family: FontAwesome;
+    color: #ffffff;
+    font-size: 30px;
+    float: left;
+    padding-left: 15px;
+    padding-top: 20px;
+  }
+  .jvn-dashboard .page-sidebar > ul > li .tour:before {
+    padding-top: 3px;
+    font-size: 34px;
+  }
+  .jvn-dashboard .page-sidebar > ul.menu > li > a .fa {
+    font-size: 30px;
+    margin: 0 15px;
+  }
+}
+@media (max-width: 768px) {
+  .jvn-dashboard .page-sidebar {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  .jvn-dashboard .page-sidebar > ul > li > a.nav-arrow-first:hover::after,
+  .jvn-dashboard .page-sidebar > ul > li > a.nav-arrow-first.active::after {
+    color: #ebebeb;
+  }
+}
+/*** Phones ***/
+@media (max-width: 480px) {
+  .page-sidebar {
+    overflow-x: hidden;
+  }
+  .page-sidebar > ul > li > a.nav-arrow-first:hover::after,
+  .page-sidebar > ul > li > a.nav-arrow-first.active::after {
+    color: #ebebeb;
+  }
+}
+/* Height fixes */
+@media screen and (max-height: 750px) {
+  .page-content {
+    min-height: 750px;
+  }
+}
+@media screen and (min-height: 751px) {
+  .page-content {
+    min-height: 1024px;
+  }
+}
+/* Greater than mobile */
+@media (min-width: 992px) {
+  .jvn-dashboard .top-nav {
+    padding: 15px 10px;
+  }
+  .jvn-dashboard #side-toggle {
+    font-size: 28px;
+    padding: 2px 20px 0 10px;
+  }
+  .jvn-dashboard .page-sidebar,
+  .jvn-dashboard .page-sidebar ul {
+    width: 85px;
+  }
+  .jvn-dashboard .page-sidebar > ul.menu > li {
+    background-position: center 15px;
+    color: #ffffff;
+  }
+  .jvn-dashboard .page-sidebar > ul.menu > li > a {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 200;
+    padding-top: 15px;
+  }
+  .jvn-dashboard .page-sidebar > ul.menu > li > a i {
+    display: block;
+    font-size: 28px;
+  }
+  .jvn-dashboard .page-sidebar > ul.menu > li > div:before {
+    font-family: jvn-font-awesome;
+    color: #ffffff;
+    font-size: 30px;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+  }
+  .jvn-dashboard .page-sidebar > ul.menu > li .talent:before,
+  .jvn-dashboard .page-sidebar > ul.menu > li .feedback:before {
+    font-family: FontAwesome;
+    color: #ffffff;
+    font-size: 30px;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+  }
+  .jvn-dashboard .menu-open .page-sidebar {
+    left: 0;
+  }
+  .jvn-dashboard .menu-open .page-container {
+    margin-left: 85px;
+    padding-right: 85px;
+  }
+  .jvn-dashboard .menu-open .jvn-footer {
+    padding-left: 85px;
+  }
+  .jvn-dashboard .menu-close .page-sidebar {
+    left: -85px;
+  }
+  .jvn-dashboard .menu-close .page-container {
+    margin-left: 0;
+    padding-right: 0;
+  }
+}

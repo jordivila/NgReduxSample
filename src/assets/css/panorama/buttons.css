@@ -1,0 +1,42 @@
+
+ 
+.jvn-busy-button {
+  position: relative;
+}
+.jvn-busy-button.btn-primary .jvn-wait-indicator,
+.jvn-busy-button.btn-secondary .jvn-wait-indicator {
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  top: 7px;
+  font-size: 20px;
+  width: 20px;
+}
+.jvn-busy-button.btn-primary .jvn-wait-indicator i,
+.jvn-busy-button.btn-secondary .jvn-wait-indicator i,
+.jvn-busy-button.btn-primary .jvn-wait-indicator .fa,
+.jvn-busy-button.btn-secondary .jvn-wait-indicator .fa {
+  /*background-image: -webkit-linear-gradient(90deg, #000000, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));*/
+  font-size: 20px;
+  padding: 0;
+}
+.jvn-busy-button.btn-primary:visited,
+.jvn-busy-button.btn-primary:focus,
+.jvn-busy-button.btn-primary:active {
+  background-color: #bbbbbb;
+}
+.jvn-busy-button.btn-primary.busy {
+  background-color: #bbbbbb;
+  border-color: #bbbbbb;
+  cursor: no-drop;
+}
+.jvn-busy-button.btn-secondary:focus,
+.jvn-busy-button.btn-secondary:active {
+  color: #bbbbbb;
+}
+.jvn-busy-button.btn-secondary.busy,
+.jvn-busy-button.btn-secondary.busy:hover {
+  color: #bbbbbb;
+  cursor: no-drop;
+  border: solid 2px #bbbbbb;
+}

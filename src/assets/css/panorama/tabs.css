@@ -1,0 +1,197 @@
+ 
+.jvn-tabs .tabs-container > ul {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.jvn-tabs .tabs-container > ul:after:before,
+.jvn-tabs .tabs-container > ul:after:after {
+  content: " ";
+  display: table;
+}
+.jvn-tabs .tabs-container > ul:after:after {
+  clear: both;
+}
+.jvn-tabs .tabs-container > ul > li {
+  list-style: none;
+  margin: 0;
+}
+.jvn-tabs .tabs-container > ul > li > a,
+.jvn-tabs .tabs-container > ul > li > div {
+  padding: 5px 15px;
+  font-size: 16px;
+  color: #000000;
+  background-color: #ffffff;
+  display: block;
+  font-family: inherit;
+  font-weight: 300;
+  border-radius: 0;
+}
+.jvn-tabs .tabs-container > ul > li > a:hover,
+.jvn-tabs .tabs-container > ul > li > div:hover,
+.jvn-tabs .tabs-container > ul > li > a:focus,
+.jvn-tabs .tabs-container > ul > li > div:focus {
+  background-color: #3ebede;
+  color: #000000;
+  text-decoration: none;
+}
+.jvn-tabs .tabs-container > ul > li .fa-exclamation-circle {
+  color: #d40f0f;
+}
+.jvn-tabs .tabs-container > ul > li.active > a,
+.jvn-tabs .tabs-container > ul > li.active > div {
+  background-color: #1a8099;
+  color: #ffffff;
+}
+.jvn-tabs .tabs-container > ul > li.active > a:hover,
+.jvn-tabs .tabs-container > ul > li.active > div:hover {
+  background-color: #3ebede;
+  color: #ffffff;
+}
+.jvn-tabs .tabs-container > ul > li.active > a:focus,
+.jvn-tabs .tabs-container > ul > li.active > div:focus {
+  background-color: #1a8099;
+}
+.jvn-tabs .tabs-container > ul > li.active .fa-exclamation-circle {
+  color: #ffffff;
+}
+.jvn-tabs .tabs-container .tab-content {
+  padding: 15px;
+}
+.jvn-tabs.horizontal .tabs-container > ul {
+  border-bottom: 4px solid #1a8099;
+}
+.jvn-tabs.horizontal .tabs-container > ul li {
+  display: inline-block;
+}
+.jvn-tabs.vertical .tabs-container > ul {
+  border-right: 4px solid #1a8099;
+  margin-right: 15px;
+  float: left;
+  min-width: 220px;
+}
+.jvn-tabs.vertical .tabs-container > ul li {
+  margin: 0 0 2px;
+  display: block;
+}
+.jvn-tabs.vertical .tabs-container > ul li:last-child {
+  margin: 0;
+}
+.jvn-tabs.vertical .tabs-container > ul li > a {
+  border-radius: 0;
+}
+.jvn-tabs.vertical .tabs-container .tab-content:before,
+.jvn-tabs.vertical .tabs-container .tab-content:after {
+  content: " ";
+  display: table;
+}
+.jvn-tabs.vertical .tabs-container .tab-content:after {
+  clear: both;
+}
+.jvn-tabs.vertical:first-child {
+  margin-top: 0;
+}
+.jvn-tabs.vertical:last-child {
+  margin-bottom: 0;
+}
+/* On White */
+.bg-white .jvn-tabs .tabs-container > ul > li > a,
+.bg-white .jvn-tabs .tabs-container > ul > li > div {
+  background-color: #e4e4e4;
+}
+.bg-white .jvn-tabs .tabs-container > ul > li > a:hover,
+.bg-white .jvn-tabs .tabs-container > ul > li > div:hover,
+.bg-white .jvn-tabs .tabs-container > ul > li > a:focus,
+.bg-white .jvn-tabs .tabs-container > ul > li > div:focus {
+  background-color: #3ebede;
+}
+.bg-white .jvn-tabs .tabs-container > ul > li.active > a,
+.bg-white .jvn-tabs .tabs-container > ul > li.active > div {
+  background-color: #1a8099;
+}
+/* Scrollable Tabs */
+.jvn-scrollable-tabs .ui-tabs-scrollable > .spacer > div:first-child > .tab-content {
+  border: none;
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable > .spacer > div:first-child > .nav-tabs > li > a {
+  height: 50px;
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable .nav-button {
+  line-height: 50px;
+  height: 49px;
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable .nav-button.left-nav-button,
+.jvn-scrollable-tabs .ui-tabs-scrollable .nav-button.right-nav-button {
+  color: #ffffff;
+  border: none;
+  min-width: 0;
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable .nav-button.left-nav-button:before,
+.jvn-scrollable-tabs .ui-tabs-scrollable .nav-button.right-nav-button:before {
+  font-family: 'FontAwesome';
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable .nav-button.left-nav-button {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a8099+0,1a8099+100&1+0,0+100 */
+  background: -moz-linear-gradient(left, #1a8099 0%, rgba(26, 128, 153, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #1a8099 0%, rgba(26, 128, 153, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #1a8099 0%, rgba(26, 128, 153, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a8099', endColorstr='#001a8099', GradientType=1);
+  /* IE6-9 */
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable .nav-button.left-nav-button:before {
+  content: "\f053";
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable .nav-button.right-nav-button {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a8099+0,1a8099+100&0+0,1+100 */
+  background: -moz-linear-gradient(left, rgba(26, 128, 153, 0) 0%, #1a8099 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(26, 128, 153, 0) 0%, #1a8099 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(26, 128, 153, 0) 0%, #1a8099 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001a8099', endColorstr='#1a8099', GradientType=1);
+  /* IE6-9 */
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable .nav-button.right-nav-button:before {
+  content: "\f054";
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable > .spacer:not(.hidden-buttons) {
+  margin: 0;
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable .tabs-container .nav-tabs {
+  background: #1a8099;
+  height: 50px;
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable .tabs-container .nav-tabs > li {
+  margin-top: 0;
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable .tabs-container .nav-tabs > li > a {
+  color: #ffffff;
+  line-height: 1.9em;
+  padding: 10px 25px;
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable .tabs-container .nav-tabs > li > a:hover,
+.jvn-scrollable-tabs .ui-tabs-scrollable .tabs-container .nav-tabs > li > a:active {
+  background: transparent;
+  border-color: transparent;
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable .tabs-container .nav-tabs > li.active > a {
+  background: transparent;
+  border: none;
+  font-weight: 400;
+}
+.jvn-scrollable-tabs .ui-tabs-scrollable .tabs-container .nav-tabs > li.active > a:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #f5f5f5 transparent;
+  position: absolute;
+  right: 50%;
+  top: 39px;
+  margin-right: -10px;
+}

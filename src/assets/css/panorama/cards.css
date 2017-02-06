@@ -1,0 +1,186 @@
+ 
+.jvn-card {
+  position: relative;
+  margin-bottom: 5px;
+  overflow: hidden;
+  perspective: 1000;
+}
+.jvn-card .card-state {
+  padding: 15px;
+  border: 1px solid #e4e4e4;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.jvn-card .card-state.card-state-front,
+.jvn-card .card-state.card-state-back,
+.jvn-card .card-state.card-state-add {
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 2;
+}
+.jvn-card .card-state.card-state-front:hover,
+.jvn-card .card-state.card-state-back:hover,
+.jvn-card .card-state.card-state-add:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 2px 0 #e4e4e4;
+}
+.jvn-card .card-state.card-state-back .card-content {
+  padding: 15px;
+}
+.jvn-card .card-state.card-state-delete {
+  background: #bbbbbb;
+  z-index: 1;
+}
+.jvn-card .card-remove .btn:hover {
+  text-decoration: none;
+}
+.jvn-card .card-disabled {
+  background: #bbbbbb;
+  opacity: .5;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  cursor: no-drop;
+}
+.jvn-deck.grid .jvn-card {
+  min-height: 360px;
+  margin-bottom: 30px;
+}
+.jvn-deck.grid .jvn-card .card-state {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all .5s;
+}
+.jvn-deck.grid .jvn-card .card-state.card-state-back {
+  transform: rotateY(-180deg);
+}
+.jvn-deck.grid .jvn-card .card-state .card-content {
+  padding-top: 15px;
+}
+.jvn-deck.grid .jvn-card .card-state .card-secondary-content {
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.jvn-deck.grid .jvn-card .card-state.card-state-delete {
+  padding: 0 15px;
+}
+.jvn-deck.grid .jvn-card .card-state.card-state-add {
+  cursor: pointer;
+}
+.jvn-deck.grid .jvn-card .card-state.card-state-add .card-content .card-cell {
+  color: #086274;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+.jvn-deck.grid .jvn-card .card-state.card-state-add .card-content .card-cell i {
+  font-size: 80px;
+  display: block;
+}
+.jvn-deck.grid .jvn-card.expanded .card-state {
+  height: auto;
+}
+.jvn-deck.grid .jvn-card .jvn-avatar {
+  border: 3px solid #bbbbbb;
+  line-height: 120%;
+  margin: 0 auto;
+}
+.jvn-deck.grid .jvn-card.warning .jvn-avatar {
+  border: 3px solid #f47b19;
+}
+.jvn-deck.grid .jvn-card.success .jvn-avatar {
+  border: 3px solid #51dc51;
+}
+.jvn-deck.grid .jvn-card.danger .jvn-avatar {
+  border: 3px solid #d40f0f;
+}
+.jvn-deck.grid .jvn-card .card-cell {
+  text-align: center;
+}
+.jvn-deck.grid .jvn-card .card-remove {
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+.jvn-deck.grid .jvn-card .card-remove .btn {
+  padding: 0;
+  height: auto;
+  font-size: 20px;
+  text-align: center;
+}
+.jvn-deck.grid .jvn-card .card-remove .btn i {
+  display: block;
+}
+.jvn-deck.grid .jvn-card .trash-animate {
+  font-size: 40px;
+}
+.jvn-deck.grid .jvn-card .trash-animate i {
+  display: block;
+  -webkit-transition: all 0.75s ease-out;
+  -moz-transition: all 0.75s ease-out;
+  -o-transition: all 0.75s ease-out;
+  -ms-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+  position: relative;
+  top: 0;
+}
+.jvn-deck.grid .jvn-card .trash-animate i.icon-can-lid {
+  top: -30px;
+}
+.jvn-deck.grid .jvn-card .delete.card-state-front {
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: 0;
+  left: 50%;
+  top: 50px;
+}
+.jvn-deck.grid .jvn-card .delete .trash-animate i.icon-can-lid {
+  top: 0;
+}
+.jvn-deck.grid .jvn-card .flipped.card-state-front {
+  transform: rotateY(-180deg);
+}
+.jvn-deck.grid .jvn-card .flipped + .card-state-back {
+  transform: rotateY(0);
+}
+.jvn-deck.list .jvn-card {
+  border-left: 10px solid #bbbbbb;
+}
+.jvn-deck.list .jvn-card .card-state-back {
+  display: none;
+}
+.jvn-deck.list .jvn-card.warning {
+  border-left-color: #f47b19;
+}
+.jvn-deck.list .jvn-card.success {
+  border-left-color: #51dc51;
+}
+.jvn-deck.list .jvn-card.danger {
+  border-left-color: #d40f0f;
+}
+.jvn-deck.list .jvn-card .card-cell {
+  float: left;
+}
+.jvn-deck.list .jvn-card .card-cell .btn-direct {
+  display: inline;
+}
+.jvn-deck.list .jvn-card .btn-toggle-expand {
+  margin-top: -10px;
+}
+.jvn-deck.list .jvn-card .delete.card-state-front {
+  display: none;
+}
+.jvn-deck.list .jvn-card .delete .delete-msg {
+  padding-right: 15px;
+}
+.jvn-deck.list .jvn-card .flipped.card-state-front {
+  display: none;
+}
+.jvn-deck.list .jvn-card .flipped + .card-state-back {
+  display: block;
+}

@@ -1,8 +1,9 @@
+import { AppStoreService } from './app.store';
+import { APP_BASE_HREF } from '@angular/common';
+import { CoreModule } from './core/core.module';
+import { AppRoutingModule } from './app-routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -11,10 +12,14 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule
+    AppRoutingModule,
+    CoreModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    { provide: APP_BASE_HREF, useValue: '/' },
+    AppStoreService,
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

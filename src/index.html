@@ -2,13 +2,27 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>NgReduxSample</title>
+  <title>NgRedux Simple</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="assets/cssNotBundled/main.css">
 </head>
 <body>
-  <app-root>Loading...</app-root>
+    <jvn-app>
+    <style type="text/css">
+      .wait-indicator.loading-app { display: table; position: absolute; height: 100%; width: 98%; }
+      .wait-indicator.loading-app .wait-indicator-content { display: table-cell; vertical-align: middle; text-align: center; }
+    </style>
+    <div class="wait-indicator loading-app">
+      <div class="wait-indicator-content">
+        <i class="fa fa-5x fa-spinner fa-spin"></i>
+        <div class="row center">
+          <h1>Loading</h1>
+        </div>
+      </div>
+    </div>
+  </jvn-app>    
 </body>
 </html>

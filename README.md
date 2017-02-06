@@ -2,6 +2,19 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.30.
 
+I tried to show how to write an @angular application which preloads feature modules in background using lazy load with webpack.
+
+One of the greatest point of @angular/cli is the fact that I can focus on coding my own applciation while leverage of webpack packaging/bundling features. 
+
+## Supports AoT compilation 
+
+As far as is based on @angular/cli this repo supports AoT compilation as well. Just take a look at documentation below.
+
+## Supports Redux Dynamic Reducer loaders
+
+Each module loaded on demand can import its own reducers, actions and store. The imported store will be part of the main one by the use of ReplaceReducers Redux function.
+
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
